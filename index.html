@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+    <title>VideoFrameViewer - Extracted Frame# </title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div><span><b>File: </b></span><span id="file"></span></div>
+    <div><span><b>Property: </b></span><span id="prop"></span></div>
+
+    <ul id=imglist></ul>
+
+    <!-- Insert this line above script imports  -->
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+
+    <!-- normal script imports etc  -->
+    <script src="jquery.min.js"></script>
+    <script src="render.js"></script>
+
+    <!-- Insert this line after script imports -->
+    <script>
+        if (window.module) module = window.module;
+    </script>
+
+</body>
+
+</html>

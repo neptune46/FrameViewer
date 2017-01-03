@@ -1,0 +1,13 @@
+{
+  "name": "FrameViewer",
+  "version": "0.0.1",
+  "description": "view video file frame by frame",
+  "main": "app.js",
+  "author": {
+    "name": "neptune46",
+    "email": "neptune46@outlook.com"
+  }
+  "dependencies": {
+  "jquery": "^3.1.1"
+  }
+}
