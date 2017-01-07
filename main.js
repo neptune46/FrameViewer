@@ -1,4 +1,5 @@
-﻿const { app, BrowserWindow } = require('electron')
+﻿
+const { app, BrowserWindow } = require('electron')
 const path = require('path')
 const url = require('url')
 const childProcess = require('child_process');
@@ -112,11 +113,11 @@ var pixfmtList = [
 ];
 
 function cleanupImgFolderSync() {
-    childProcess.execSync("del /F /Q img\\*.png");
+    childProcess.execSync("del img\\*.png");
 }
 
 function cleanupBmpFolderSync() {
-    childProcess.execSync("del /F /Q bmp\\*.bmp");
+    childProcess.execSync("del bmp\\*.bmp");
 }
 
 function getRawVideoInfoFromFileName(inFileName) {
